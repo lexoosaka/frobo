@@ -1,0 +1,42 @@
+/*
+センサーやモータのポート関連付け
+
+memo
+
+2010
+NXT_PORT_S1  :  touch sensor
+NXT_PORT_S2  :  sonar sensor
+NXT_PORT_S3  :  light sensor
+NXT_PORT_S4  :  gyro sensor
+NXT_PORT_A   :  empty
+NXT_PORT_B   :   motor R
+NXT_PORT_C   :   motor L
+
+
+2011
+#define PORT_TOUCH_SENSOR NXT_PORT_S1
+#define PORT_SONAR_SENSOR NXT_PORT_S2
+#define PORT_LIGHT_SENSOR NXT_PORT_S3
+#define PORT_GYRO_SENSOR NXT_PORT_S4
+#define PORT_TAIL_MOTOR NXT_PORT_A
+#define PORT_RIGHT_MOTOR NXT_PORT_B
+#define PORT_LEFT_MOTOR NXT_PORT_C
+
+
+*/
+
+
+#define PORT_TOUCH_SENSOR NXT_PORT_S1
+#define PORT_SONAR_SENSOR NXT_PORT_S2
+#define PORT_LIGHT_SENSOR NXT_PORT_S3
+#define PORT_GYRO_SENSOR NXT_PORT_S4
+#define PORT_TAIL_MOTOR NXT_PORT_A
+#define PORT_RIGHT_MOTOR NXT_PORT_B
+#define PORT_LEFT_MOTOR NXT_PORT_C
+
+
+
+
+
+
+
