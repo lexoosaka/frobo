@@ -81,32 +81,32 @@ static strategyParam runningStrategy[] =
 {
 
 		////2011年度ETロボコンアウトコース攻略パラメータ////
-		{JUDGE_MILEAGE,40,0,BLIND_RUNNING,30,0},										//ゴール後静止
-
-		{JUDGE_DIRECTION, 50, DIRECTION_STABILITY, LINE_TRACE, 10, LEFT_SMALL},		//ライントレース_速度10_右エッジ_スタートミス回避
-		{JUDGE_MILEAGE, 600, 0, LINE_TRACE, 100, LEFT_EDGE},								//ライントレース_速度80_右エッジ_坂道頂上まで走行
-		{JUDGE_MILEAGE,2000,0,LINE_TRACE,70,LEFT_EDGE},									//ライントレース_速度40_右エッジ_坂道を下る
+		//{JUDGE_MILEAGE,40,0,BLIND_RUNNING,30,0},										//ゴール後静止
+		{JUDGE_MILEAGE,1000000,0,LINE_TRACE,20,LEFT_EDGE}				//test
+		//{JUDGE_DIRECTION, 50, DIRECTION_STABILITY, LINE_TRACE, 10, LEFT_SMALL},		//ライントレース_速度10_右エッジ_スタートミス回避
+		//{JUDGE_MILEAGE, 600, 0, LINE_TRACE, 100, LEFT_EDGE},								//ライントレース_速度80_右エッジ_坂道頂上まで走行
+		//{JUDGE_MILEAGE,2000,0,LINE_TRACE,70,LEFT_EDGE},									//ライントレース_速度40_右エッジ_坂道を下る
 	//	{JUDGE_MILEAGE,500,0,LINE_TRACE,60,LEFT_EDGE},									//ライントレース_速度60_右エッジ_第1コーナー途中まで走る
 	//	{JUDGE_DIRECTION,100,DIRECTION_STABILITY,LINE_TRACE,60,LEFT_EDGE},				//ライントレース_速度70_右エッジ_第1コーナーを抜けたかどうか判定
 	//	{JUDGE_MILEAGE, 1000, 0, LINE_TRACE,80, LEFT_EDGE}	,							//ライントレース_速度80_右エッジ_第二ストレート走行
 	//	{JUDGE_DIRECTION,188,0,LINE_TRACE,60,LEFT_EDGE},								//ライントレース_速度60_右エッジ_第二コーナー
 	//	{JUDGE_DIRECTION,-150,0,LINE_TRACE,60,LEFT_EDGE},								//ライントレース_速度60_右エッジ_ヘアピン
 	//	{JUDGE_DIRECTION,100,DIRECTION_STABILITY,LINE_TRACE,50,LEFT_EDGE},				//ライントレース_速度50_右エッジ_したコーナーを抜けたかどうか判定
-		{JUDGE_SONAR,10,0,LINE_TRACE,100,LEFT_SMALL},									//障害検知
+		//{JUDGE_SONAR,10,0,LINE_TRACE,100,LEFT_SMALL},									//障害検知
 	//	{JUDGE_MILEAGE,150,0,BLIND_RUNNING,20,0},										//障害検知
-		{JUDGE_TAIL,0,2,BLIND_RUNNING,10,0},											//ジャイロオフ
-		{JUDGE_MILEAGE, 50, 0,0,0,0},													//のけぞる
-		{JUDGE_TAIL,0,3,0,0,0},															//速度落とす											//尻尾倒す
-		{JUDGE_MILEAGE,400,0,BLIND_RUNNING,20,0},										//ゲート通過
-		{JUDGE_TAIL,30,0,BLIND_RUNNING,10,0},											//尻尾戻す
-		{JUDGE_TAIL,1,2,BLIND_RUNNING,10,0},											//ジャイロオン
-		{JUDGE_BRIGHTNESS,GRAY,OVER,BLIND_RUNNING,10,-125},								//ブラインド走行_速度10_右旋回_ライン探索
-		{JUDGE_BRIGHTNESS,GRAY,STABILITY,LINE_TRACE,5,LEFT_EDGE},						//ライントレース_速度05_右エッジ_ライン復帰
-		{JUDGE_MILEAGE, 2400, 0, LINE_TRACE,80, LEFT_EDGE},								//ライントレース_速度60_左エッジ_蛇行ルート走行
-		{JUDGE_DIRECTION,100,DIRECTION_STABILITY,LINE_TRACE,50,LEFT_EDGE},				//ライントレース_速度50_左エッジ_蛇行ルートを抜けたかどうか判定
-		{JUDGE_MILEAGE, 850, 0, LINE_TRACE,80, LEFT_EDGE},								//ライントレース_速度60_左エッジ_ゴールまで走行
-		{JUDGE_MILEAGE, 50, 0, LINE_TRACE,20, LEFT_EDGE},								//ライントレース_速度60_左エッジ_ゴールまで走行
-		{JUDGE_MILEAGE,1000,0,BLIND_RUNNING,0,0}										//ゴール後静止
+		//{JUDGE_TAIL,0,2,BLIND_RUNNING,10,0},											//ジャイロオフ
+		//{JUDGE_MILEAGE, 50, 0,0,0,0},													//のけぞる
+		//{JUDGE_TAIL,0,3,0,0,0},															//速度落とす											//尻尾倒す
+		//{JUDGE_MILEAGE,400,0,BLIND_RUNNING,20,0},										//ゲート通過
+		//{JUDGE_TAIL,30,0,BLIND_RUNNING,10,0},											//尻尾戻す
+		//{JUDGE_TAIL,1,2,BLIND_RUNNING,10,0},											//ジャイロオン
+		//{JUDGE_BRIGHTNESS,GRAY,OVER,BLIND_RUNNING,10,-125},								//ブラインド走行_速度10_右旋回_ライン探索
+		//JUDGE_BRIGHTNESS,GRAY,STABILITY,LINE_TRACE,5,LEFT_EDGE},						//ライントレース_速度05_右エッジ_ライン復帰
+		//{JUDGE_MILEAGE, 2400, 0, LINE_TRACE,80, LEFT_EDGE},								//ライントレース_速度60_左エッジ_蛇行ルート走行
+		//{JUDGE_DIRECTION,100,DIRECTION_STABILITY,LINE_TRACE,50,LEFT_EDGE},				//ライントレース_速度50_左エッジ_蛇行ルートを抜けたかどうか判定
+		//{JUDGE_MILEAGE, 850, 0, LINE_TRACE,80, LEFT_EDGE},								//ライントレース_速度60_左エッジ_ゴールまで走行
+		//{JUDGE_MILEAGE, 50, 0, LINE_TRACE,20, LEFT_EDGE},								//ライントレース_速度60_左エッジ_ゴールまで走行
+		//{JUDGE_MILEAGE,1000,0,BLIND_RUNNING,0,0}										//ゴール後静止
 }; /* 通常戦略 */
 
 static strategyParam runningSPStrategy[] =

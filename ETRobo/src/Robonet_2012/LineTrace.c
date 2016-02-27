@@ -24,6 +24,7 @@ void LineTrace_init(
 	LineTrace* this,
 	CourseBrightness* courseBrightness,
 	CommandValue* commandValue
+	
 )
 {
 	/* ‰Šú‰» */
@@ -97,7 +98,13 @@ S8 LineTrace_execution(LineTrace* this, S8 speed, S16 mode)
 	/* ”÷•ª§Œä‘€ì—Ê‚ğŒvZ */
 	if((mode == LEFT_EDGE) || (mode == RIGHT_EDGE) || (mode == LEFT_SMALL) || (mode == RIGHT_SMALL) || (mode == LEFT_BIG) || (mode == RIGHT_BIG))
 	{	
-		turn += (float)(CourseBrightness_getDiffPast(this->courseBrightness)) * D_PARAM;
+		//turn += (float)(CourseBrightness_getDiffPast(this->courseBrightness)) * D_PARAM;
+		//+(float)(CourseBrightness_getDiffPast(this->courseBrightness)) * D_PARAM;
+		turn+=(float)(CourseBrightness_getDiffEdge(this->courseBrightness)) * P_PARAM
+		+(float)(this->courseBrightness->brightness[BRIGHTNESS_NUM - 1 - 5])*0.2F+
+		(float)((this->courseBrightness->brightness[BRIGHTNESS_NUM - 1 - 5]) - (this->courseBrightness->brightness[BRIGHTNESS_NUM - 1])
+			-(this->courseBrightness->brightness[BRIGHTNESS_NUM - 1 - 5]) - (this->courseBrightness->brightness[BRIGHTNESS_NUM - 2]))*D_PARAM;
+		//ƒ¢MVn = Kp(en-en-1) + Ki en + Kd((en-en-1) - (en-1-en-2))
 	}	
 	turn = (((turn) >= (100)) ? (100) : (((turn) <= (-100)) ? (-100) : (turn))); /* turn‚Ì”ÍˆÍ‚Í100`-100 */
 	
